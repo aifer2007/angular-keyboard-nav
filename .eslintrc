@@ -1,0 +1,6 @@
+{
+    "extends": "unicorn-science",
+    "env": {
+        "jasmine": true
+    }
+}

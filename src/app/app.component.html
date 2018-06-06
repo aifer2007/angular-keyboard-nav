@@ -1,0 +1,20 @@
+<nav class="navbar navbar-dark bg-dark">
+  <span class="navbar-brand mb-0 h1">Keyboard Nav Demo</span>
+</nav>
+
+<div class="container py-5">
+  <p>Use the keyboard arrows (<kbd>&#8593;</kbd> and <kbd>&#8595;</kbd>) to navigate the list items.</p>
+
+  <div class="list-group mb-3" jlKeyboardNav>
+    <button
+      type="button"
+      class="list-group-item text-left"
+      jlKeyboardNavItem
+      (click)="onSelect(hero)"
+      *ngFor="let hero of heros">
+      {{hero}}
+    </button>
+  </div>
+
+  <code>Selected: {{selected || 'none'}}</code>
+</div>
