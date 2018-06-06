@@ -1,27 +1,5 @@
 {
   "name": "angular-keyboard-nav",
-  "version": "1.0.0",
-  "description": "Angular directive to navigate elements with keyboard arrow keys.",
-  "keywords": [
-    "angular",
-    "keyboard",
-    "navigation",
-    "arrow-keys"
-  ],
-  "author": {
-    "name": "Justin Lettau",
-    "email": "me@justinlettau.com",
-    "url": "http://justinlettau.com"
-  },
-  "license": "MIT",
-  "homepage": "https://github.com/justinlettau/angular-keyboard-nav",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/justinlettau/angular-keyboard-nav"
-  },
-  "bugs": {
-    "url": "https://github.com/justinlettau/angular-keyboard-nav/issues"
-  },
   "peerDependencies": {
     "@angular/common": ">=5.0.0",
     "@angular/core": ">=5.0.0"

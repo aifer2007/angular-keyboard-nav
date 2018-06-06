@@ -1,16 +1,25 @@
 {
   "name": "angular-keyboard-nav-app",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Angular directive to navigate elements with keyboard arrow keys.",
   "author": {
     "name": "Justin Lettau",
     "email": "me@justinlettau.com",
     "url": "http://justinlettau.com"
   },
   "license": "MIT",
+  "homepage": "https://github.com/justinlettau/angular-keyboard-nav",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justinlettau/angular-keyboard-nav"
+  },
+  "bugs": {
+    "url": "https://github.com/justinlettau/angular-keyboard-nav/issues"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
-    "build": "ng build angular-keyboard-nav --prod",
+    "build": "ng build angular-keyboard-nav --prod && node scripts/postbuild.js",
     "test": "ng test",
     "e2e": "ng e2e",
     "lint": "npm run lint.app && npm run lint.sass && npm run lint.tools",
@@ -46,6 +55,7 @@
     "codelyzer": "~4.3.0",
     "eslint": "^4.19.1",
     "eslint-config-unicorn-science": "^1.1.0",
+    "fs-extra": "^6.0.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~1.7.1",
