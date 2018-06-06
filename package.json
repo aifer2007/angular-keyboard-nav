@@ -2,6 +2,12 @@
   "name": "angular-keyboard-nav-app",
   "version": "1.0.1",
   "description": "Angular directive to navigate elements with keyboard arrow keys.",
+  "keywords": [
+    "angular",
+    "keyboard",
+    "navigation",
+    "arrow-keys"
+  ],
   "author": {
     "name": "Justin Lettau",
     "email": "me@justinlettau.com",
