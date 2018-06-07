@@ -1,19 +1,17 @@
-import { Directive, ElementRef, HostListener, QueryList, ViewChildren } from '@angular/core';
+import { ContentChildren, Directive, HostListener, QueryList } from '@angular/core';
 
 import { KeyboardNavItemDirective } from '../keyboard-nav-item/keyboard-nav-item.directive';
+
 
 @Directive({
   selector: '[jlKeyboardNav]'
 })
 export class KeyboardNavDirective {
-  constructor(
-    private elementRef: ElementRef
-  ) { }
 
   /**
    * Keyboard nav items.
    */
-  @ViewChildren(KeyboardNavItemDirective)
+  @ContentChildren(KeyboardNavItemDirective, { descendants: true })
   public items: QueryList<KeyboardNavItemDirective>;
 
   /**

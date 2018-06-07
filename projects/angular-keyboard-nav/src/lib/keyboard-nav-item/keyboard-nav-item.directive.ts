@@ -1,14 +1,11 @@
 import { Directive, ElementRef } from '@angular/core';
 
-import { KeyboardNavDirective } from '../keyboard-nav/keyboard-nav.directive';
-
 @Directive({
   selector: '[jlKeyboardNavItem]'
 })
 export class KeyboardNavItemDirective {
   constructor(
-    private elementRef: ElementRef,
-    private parent: KeyboardNavDirective
+    private elementRef: ElementRef
   ) { }
 
   /**
