@@ -75,7 +75,7 @@
     "sass-lint-config-unicorn-science": "^1.1.0",
     "standard-version": "^4.4.0",
     "ts-node": "~6.2.0",
-    "tsickle": "^0.30.0",
+    "tsickle": "^0.31.0",
     "tslib": "^1.7.1",
     "tslint": "~5.10.0",
     "tslint-config-unicorn-science": "^1.3.0",
