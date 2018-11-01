@@ -1,11 +1,17 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
+
+  /**
+   * Navigable items.
+   */
+  @ViewChildren('item', { read: ElementRef })
+  public items: QueryList<ElementRef>;
 
   /**
    * Available heros.
@@ -22,6 +28,13 @@ export class AppComponent {
    * Currently selected hero.
    */
   public selected: string;
+
+  /**
+   * After view init.
+   */
+  public ngAfterViewInit(): void {
+    this.items.first.nativeElement.focus();
+  }
 
   /**
    * On hero selection.

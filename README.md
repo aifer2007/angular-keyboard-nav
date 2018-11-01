@@ -6,6 +6,9 @@
 # Angular Keyboard Nav
 Angular directive to navigate elements with keyboard arrow keys.
 
+# Demo
+[https://justinlettau.github.io/angular-keyboard-nav/](https://justinlettau.github.io/angular-keyboard-nav/)
+
 # Installation
 ```bash
 npm install angular-keyboard-nav --save
