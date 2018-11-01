@@ -25,8 +25,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
-    "build": "ng build --prod --base-href /angular-keyboard-nav/",
-    "lib:build": "ng build angular-keyboard-nav --prod && node scripts/postbuild.js",
+    "build": "npm run build:lib && npm run build:app",
+    "build:app": "ng build --prod --base-href /angular-keyboard-nav/",
+    "build:lib": "ng build angular-keyboard-nav --prod && node scripts/postbuild.js",
     "test": "ng test",
     "e2e": "ng e2e",
     "lint": "npm run lint.app && npm run lint.sass && npm run lint.tools",
@@ -34,7 +35,7 @@
     "lint.sass": "sass-lint -c .sass-lint.yml -v",
     "lint.tools": "eslint e2e/**/*.js projects/**/*.js scripts/**/*.js src/**/*.js -c .eslintrc.json",
     "release": "standard-version",
-    "prepublishOnly": "npm run lib:build",
+    "prepublishOnly": "npm run build:lib",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist/angular-keyboard-nav-app"
   },
