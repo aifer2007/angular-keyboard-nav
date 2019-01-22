@@ -80,7 +80,7 @@
     "sass-lint": "^1.12.1",
     "sass-lint-config-unicorn-science": "^1.1.0",
     "standard-version": "^4.4.0",
-    "ts-node": "~7.0.0",
+    "ts-node": "~8.0.0",
     "tsickle": "^0.34.0",
     "tslib": "^1.9.3",
     "tslint": "~5.12.0",
