@@ -75,7 +75,7 @@
     "karma-coverage-istanbul-reporter": "~2.0.0",
     "karma-jasmine": "~2.0.0",
     "karma-jasmine-html-reporter": "^1.2.0",
-    "ng-packagr": "^4.0.0",
+    "ng-packagr": "^5.0.0",
     "protractor": "~5.4.0",
     "sass-lint": "^1.12.1",
     "sass-lint-config-unicorn-science": "^1.1.0",
